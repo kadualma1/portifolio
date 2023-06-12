@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Qual o seu nome?')
+        const idade = prompt('Quantos anos você tem?')
+        const linguagem = prompt('Que linguagem de programação você está aprendendo?')
+        const resultado = alert(`Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`)
+        let gostos = prompt(`Você gosta de estudar ${linguagem}? Digite 1 para Sim e 2 para Não.`)
+        
+        while(gostos !== '1' && gostos !== '2'){
+            alert('Opa, você não digitou um valor válido... Tente novamente.')
+            gostos = prompt(`Você gosta de estudar ${linguagem}? Digite 1 para Sim e 2 para Não.`)
+        }
+
+        if(gostos === '1'){
+            alert('Que bom! Continue estudando em rumo ao sucesso!')
+        }else if(gostos === '2'){
+            alert('Realmente uma pena, tente outras linguagens!')
+        }
+       
+    </script>
+</body>
+</html>
