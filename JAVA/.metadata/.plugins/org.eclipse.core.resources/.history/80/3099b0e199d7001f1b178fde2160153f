@@ -1,0 +1,31 @@
+package ex;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ex_005 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n, hours;
+		double value, salary;
+		
+		value = sc.nextDouble();
+		
+		n = sc.nextInt();
+		hours = sc.nextInt();
+
+		salary = hours * value;
+		
+		System.out.println("NUMBER = " + n);
+		System.out.printf("SALARY = %.2f", salary);
+				
+		sc.close();
+
+	}
+
+}

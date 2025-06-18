@@ -1,0 +1,65 @@
+package ex;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.BankAccount;
+
+public class ex_028 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		String accountHolder;
+		char hasInicialDeposit;
+		int accountNumber;
+		double amount, deposit, withdraw;
+		Scanner sc = new Scanner(System.in);
+		BankAccount ba;
+		
+		System.out.print("Enter account number: ");
+		accountNumber = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("Enter account holder: ");
+		accountHolder = sc.nextLine();
+		
+		System.out.print("Is there inicial deposit (y/n)? ");
+		hasInicialDeposit = sc.next().charAt(0);
+		
+		if (hasInicialDeposit == 'y') {
+			System.out.print("Enter inicial deposit value: ");
+			amount = sc.nextDouble();
+			ba = new BankAccount(accountHolder, accountNumber, amount);
+		}
+		else {
+			ba = new BankAccount(accountHolder, accountNumber);
+		}
+
+		
+		System.out.println();
+		System.out.println("Account data: ");
+		System.out.println(ba);
+		System.out.println();
+		
+
+		System.out.print("Enter a deposit value: ");
+		deposit = sc.nextDouble();
+		ba.deposit(deposit);
+		System.out.println("Updated account data: ");
+		System.out.println(ba);
+		System.out.println();
+		
+		System.out.print("Enter a withdraw value: ");
+		withdraw = sc.nextDouble();
+		ba.withdraw(withdraw);
+		System.out.println("Updated account data: ");
+		System.out.println(ba);
+		System.out.println();	
+		
+		
+		sc.close();
+
+	}
+
+}
