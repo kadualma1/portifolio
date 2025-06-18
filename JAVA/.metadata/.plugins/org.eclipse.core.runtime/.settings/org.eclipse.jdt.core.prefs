@@ -4,3 +4,4 @@ org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
 org.eclipse.jdt.core.compiler.compliance=21
 org.eclipse.jdt.core.compiler.release=enabled
 org.eclipse.jdt.core.compiler.source=21
+org.eclipse.jdt.core.userLibrary.pgsql_concector=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/genes/Documents/PROGRAMA\u00C7\u00C3O/java_libs/jdbc_conectors/postgresql-42.7.7.jar"/>\r\n</userlibrary>\r\n
